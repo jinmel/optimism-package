@@ -64,7 +64,7 @@ def launch_l2(plan, l2_num, l2_args, l1_config, l1_priv_key, l1_bootnode_context
             blockscout_launcher = blockscout.launch_blockscout(
                 plan,
                 network_params.network_id,
-                l1_bootnode_context,  # first l1 EL url
+                participant.el_context,
                 l2oo_address,
                 blockscout_env_variables,
             )
