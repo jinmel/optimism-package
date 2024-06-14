@@ -15,7 +15,7 @@ def launch_l2(plan, l2_num, l2_args, l1_config, l1_priv_key, l1_bootnode_context
     l2_config_env_vars = {}
     l2_config_env_vars["L2_CHAIN_ID"] = str(network_params.network_id)
     l2_config_env_vars["L2_BLOCK_TIME"] = str(network_params.seconds_per_slot)
-    l2_services_suffix = "-{}".format(network_params.network_id)
+    l2_services_suffix = "{}".format(network_params.network_id)
     # dont add suffix to distinguish services for first l2, in case only one is being deployed
     if l2_num == 0:
         l2_services_suffix = ""
