@@ -39,10 +39,10 @@ RUN curl -L https://foundry.paradigm.xyz | bash
 ENV PATH="/root/.foundry/bin:${PATH}"
 RUN foundryup
 
-RUN git clone https://github.com/ethereum-optimism/optimism.git && \
+RUN git clone https://github.com/jinmel/optimism.git && \
     cd optimism && \
-    git checkout develop && \
-    git pull origin develop && \
+    git checkout l2_cross_inbox && \
+    git pull origin l2_cross_inbox && \
     pnpm install && \
     pnpm build && \
     cd op-node && \
