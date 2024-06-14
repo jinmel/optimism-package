@@ -117,6 +117,7 @@ def deploy_l2_contracts(
                 "mv $DEPLOY_CONFIG_PATH /network-configs/getting-started.json",
                 "mv $DEPLOYMENT_OUTFILE /network-configs/kurtosis.json",
                 "mv $STATE_DUMP_PATH /network-configs/state-dump.json",
+                "echo -n $GS_ADMIN_PRIVATE_KEY > /network-configs/GS_ADMIN_PRIVATE_KEY",
                 "echo -n $GS_SEQUENCER_PRIVATE_KEY > /network-configs/GS_SEQUENCER_PRIVATE_KEY",
                 "echo -n $GS_BATCHER_PRIVATE_KEY > /network-configs/GS_BATCHER_PRIVATE_KEY",
                 "echo -n $GS_PROPOSER_PRIVATE_KEY > /network-configs/GS_PROPOSER_PRIVATE_KEY",
