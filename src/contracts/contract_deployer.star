@@ -121,6 +121,10 @@ def deploy_l2_contracts(
                 "echo -n $GS_SEQUENCER_PRIVATE_KEY > /network-configs/GS_SEQUENCER_PRIVATE_KEY",
                 "echo -n $GS_BATCHER_PRIVATE_KEY > /network-configs/GS_BATCHER_PRIVATE_KEY",
                 "echo -n $GS_PROPOSER_PRIVATE_KEY > /network-configs/GS_PROPOSER_PRIVATE_KEY",
+                "echo -n $GS_ADMIN_ADDRESS > /network-configs/GS_ADMIN_ADDRESS",
+                "echo -n $GS_SEQUENCER_ADDRESS > /network-configs/GS_SEQUENCER_ADDRESS",
+                "echo -n $GS_BATCHER_ADDRESS > /network-configs/GS_BATCHER_ADDRESS",
+                "echo -n $GS_PROPOSER_ADDRESS > /network-configs/GS_PROPOSER_ADDRESS",
             ]
         ),
         wait="2000s",
